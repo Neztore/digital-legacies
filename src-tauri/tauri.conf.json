@@ -1,0 +1,86 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Protecting Digital Legacies",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "open": true,
+        "confirm": true,
+        "save": true
+      },
+      "clipboard": {
+        "writeText": true
+      },
+      "http": {
+        "all": true,"scope": ["http://localhost:8080/**", "https://jhdm1.teaching.cs.st-andrews.ac.uk/**", "http://localhost:22469/**", "https://legacies.josh.scot/**"]
+      },
+      "process": {
+        "exit": true
+      },
+      "notification": {
+        "all": true
+      },
+      "fs": {
+        "readDir": true,
+        "readFile": true,
+        "writeFile": true,
+        "copyFile": true,
+        "removeDir": true,
+        "removeFile": true,
+        "createDir": true,
+        "exists": true,
+        "scope": ["$APPDATA/**", "$DOWNLOAD/**", "**/**"]
+      },
+      "path": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.digital.legacies",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "maximized": true,
+        "resizable": true,
+        "title": "legacies-app",
+        "width": 800,
+        "height": 600,
+        "visible": false
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "resizable": false,
+        "decorations": false,
+        "url": "splashscreen.html",
+        "label": "splashscreen",
+        "center": true
+      }
+    ]
+  }
+}

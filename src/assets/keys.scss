@@ -1,0 +1,38 @@
+// Circle configuration styles
+$circle-radius: 5px;
+.circle {
+  border: 1px solid gray;
+  border-radius: $circle-radius;
+
+  margin-bottom: 1rem;
+}
+
+.circle .circle-inside {
+  padding: 0 1rem 1rem 1rem;
+
+}
+
+.circle .circle-top {
+  background: $grey-lightest;
+  border-radius: $circle-radius $circle-radius 0 0;
+  padding: 1rem 1rem 0.2rem 1rem;
+  color: black;
+}
+
+.circle .circle-top h3 {
+  color: black;
+}
+
+.circle.is-required .circle-top {
+  background: $primary;
+}
+
+.key {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.warning-text {
+  color: $warning-dark;
+}

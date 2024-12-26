@@ -1,0 +1,40 @@
+// Styling used for import pages, and in some other areas.
+#import-right {
+  flex: 1 1 auto;
+  background-color: $filetable-background-color;
+  padding: 0.3rem 3rem 0.5rem 1rem;
+}
+
+
+.import-top {
+  padding: 1.5rem 1.5rem 1.5rem calc(20% + 1.5rem);
+  border-bottom: 1px solid $border;
+  flex: 0 1 auto;
+}
+
+.import-columns {
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+  padding: 1rem 1rem 0 1rem;
+  border-right: 1px solid $border;
+  background-color: $sidebar-background;
+}
+
+.stack {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  .static {
+    flex: 0 1 auto;
+  }
+
+  .fill {
+    flex: 1 1 auto;
+  }
+
+}

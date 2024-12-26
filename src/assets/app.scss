@@ -1,0 +1,61 @@
+@import "colours";
+@import "bulma/sass/utilities/initial-variables";
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+span.small {
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
+.import-main {
+  padding-top: 3rem;
+  height: 100%;
+}
+
+.buttons .dropdown {
+  margin-right: 0.5rem;
+}
+
+.page-inner {
+  min-height: 80vh;
+}
+
+.special-text {
+  font-weight: bold;
+}
+
+$menu-label-color: #000;
+
+$sidebar-background: $grey-lighter;
+$filetable-background-color: $grey-lightest;
+
+// Import bulma styles.
+// I deliberately don't import them all to try and save space.
+@import "progress";
+@import "import";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/components/menu.sass";
+@import "bulma/sass/elements/title.sass";
+@import "bulma/sass/layout/hero";
+@import "bulma/sass/layout/section";
+@import "bulma/sass/elements/content";
+@import "bulma/sass/components/level";
+@import "bulma/sass/elements/button";
+@import "bulma/sass/form/all";
+@import "bulma/sass/elements/table";
+@import "bulma/sass/components/breadcrumb";
+@import "bulma/sass/components/dropdown";
+@import "bulma/sass/elements/box";
+@import "bulma/sass/elements/other";
+@import "bulma/sass/helpers/_all.sass";
+
+@import "keys";
